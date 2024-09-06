@@ -1,0 +1,23 @@
+variables:
+  SELENIUM_URL: $SELENIUM_URL
+  SELENIUM_BROWSER: $SELENIUM_BROWSER
+  SELENIUM_WAIT: $SELENIUM_WAIT
+  SELENIUM_HEADLESS: $SELENIUM_HEADLESS
+
+stages:
+  - test
+  - report
+
+test:
+  stage: test
+  script: 
+    - mvn test -Dparallel-strategy=custom -Dparallel-fixed-level=4
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - target/surefire-reports/TEST-*.xml
+        - target/failsafe-reports/TEST-*.xml
+        - target/junit-platform/TEST-*.xml        
+
+
