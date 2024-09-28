@@ -1,4 +1,4 @@
-package com.planittesting.automation.driver.support;
+package com.planittesting.voltage.driver.support;
 
 import java.time.Duration;
 import java.util.function.Function;

@@ -1,4 +1,4 @@
-package com.planittesting.automation.driver.support;
+package com.planittesting.voltage.driver.support;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
