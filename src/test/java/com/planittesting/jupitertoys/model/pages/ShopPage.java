@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.planittesting.jupitertoys.model.components.Product;
 
-public class ShopPage extends BasePage {
+public class ShopPage extends BasePage<ShopPage> {
 
     public ShopPage(WebDriver driver) {
         super(driver);

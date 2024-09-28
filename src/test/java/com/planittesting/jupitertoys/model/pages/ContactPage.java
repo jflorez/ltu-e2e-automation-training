@@ -10,7 +10,7 @@ import com.planittesting.automation.driver.support.CleanWebDriverWait;
 import com.planittesting.automation.driver.support.CustomActions;
 import com.planittesting.jupitertoys.model.data.ContactData;
 
-public class ContactPage extends BasePage {
+public class ContactPage extends BasePage<ContactPage> {
 
 	public ContactPage(WebDriver driver) {
 		super(driver);

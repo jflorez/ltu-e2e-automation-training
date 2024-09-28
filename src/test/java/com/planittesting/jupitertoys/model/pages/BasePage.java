@@ -3,6 +3,8 @@ package com.planittesting.jupitertoys.model.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.planittesting.jupitertoys.model.components.LoginDialog;
+
 /**
  * <h1>BasePage</h1>
  * <p>
@@ -30,7 +32,7 @@ import org.openqa.selenium.WebDriver;
  * from there.
  * </p>
  */
-public abstract class BasePage {
+public abstract class BasePage<T> {
 
 	protected final WebDriver driver;
 
@@ -59,5 +61,12 @@ public abstract class BasePage {
 	public CartPage clickCartMenu() {
 		driver.findElement(By.id("menu-cart")).click();
 		return new CartPage(driver);
+	}
+
+	@SuppressWarnings("unchecked")
+	public LoginDialog<T> clickLoginMenu() {
+		driver.findElement(By.id("menu-login")).click();
+		var rootElement = driver.findElement(By.id("login-modal"));
+		return new LoginDialog<>(rootElement, (T)this);
 	}
 }

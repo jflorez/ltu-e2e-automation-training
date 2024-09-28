@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class CartPage extends BasePage {
+public class CartPage extends BasePage<CartPage> {
 
 	private Table cartItems;
 

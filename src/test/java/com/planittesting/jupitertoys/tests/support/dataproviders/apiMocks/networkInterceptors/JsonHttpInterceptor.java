@@ -1,9 +1,8 @@
 package com.planittesting.jupitertoys.tests.support.dataproviders.apiMocks.networkInterceptors;
 
-import java.io.ByteArrayInputStream;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.devtools.NetworkInterceptor;
+import org.openqa.selenium.remote.http.Contents;
 import org.openqa.selenium.remote.http.HttpResponse;
 import org.openqa.selenium.remote.http.Route;
 import org.slf4j.Logger;
@@ -24,7 +23,7 @@ public class JsonHttpInterceptor {
                         .addHeader("Access-Control-Allow-Origin", "*")
                         .addHeader("Access-Control-Allow-Methods", "OPTIONS,POST,PUT,DELETE,GET")
                         .addHeader("Access-Control-Allow-Headers", "Content-Type, Authorization, x-api-key")
-                        .setContent(() -> new ByteArrayInputStream(json.getBytes()));
+                        .setContent(Contents.bytes(json.getBytes()));
                 }
             )
         );
