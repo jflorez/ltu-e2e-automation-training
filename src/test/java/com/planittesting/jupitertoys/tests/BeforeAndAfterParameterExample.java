@@ -1,8 +1,8 @@
 package com.planittesting.jupitertoys.tests;
 
-import com.planittesting.automation.tests.support.BeforeAndAfterParameterResolver;
 import com.planittesting.jupitertoys.model.data.ContactData;
 import com.planittesting.jupitertoys.tests.support.dataproviders.CsvToContactData;
+import com.planittesting.voltage.tests.support.BeforeAndAfterParameterResolver;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

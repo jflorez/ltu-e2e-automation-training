@@ -1,4 +1,4 @@
-package com.planittesting.automation.driver;
+package com.planittesting.voltage.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

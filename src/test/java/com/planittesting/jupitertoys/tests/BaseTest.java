@@ -4,9 +4,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.time.Duration;
 import java.util.stream.Stream;
 
-import com.planittesting.automation.driver.DriverFactory;
-import com.planittesting.automation.driver.support.DriverLogListener;
 import com.planittesting.jupitertoys.tests.support.AfterEachProcessor;
+import com.planittesting.voltage.driver.DriverFactory;
+import com.planittesting.voltage.driver.support.DriverLogListener;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;

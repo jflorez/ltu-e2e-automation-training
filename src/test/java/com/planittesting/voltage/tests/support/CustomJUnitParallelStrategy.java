@@ -1,4 +1,4 @@
-package com.planittesting.automation.tests.support;
+package com.planittesting.voltage.tests.support;
 
 import java.util.concurrent.ForkJoinPool;
 import java.util.function.Predicate;

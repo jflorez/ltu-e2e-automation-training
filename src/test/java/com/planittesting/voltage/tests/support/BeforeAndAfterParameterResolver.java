@@ -1,4 +1,4 @@
-package com.planittesting.automation.tests.support;
+package com.planittesting.voltage.tests.support;
 
 import java.lang.annotation.Annotation;
 import java.util.Arrays;

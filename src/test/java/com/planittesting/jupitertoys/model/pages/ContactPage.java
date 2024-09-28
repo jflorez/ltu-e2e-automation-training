@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 
 import java.time.Duration;
 
-import com.planittesting.automation.driver.support.CleanWebDriverWait;
-import com.planittesting.automation.driver.support.CustomActions;
 import com.planittesting.jupitertoys.model.data.ContactData;
+import com.planittesting.voltage.driver.support.CleanWebDriverWait;
+import com.planittesting.voltage.driver.support.CustomActions;
 
 public class ContactPage extends BasePage<ContactPage> {
 

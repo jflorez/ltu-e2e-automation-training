@@ -1,4 +1,4 @@
-package com.planittesting.automation.driver;
+package com.planittesting.voltage.driver;
 
 import java.net.MalformedURLException;
 import java.net.URI;
